@@ -43,3 +43,51 @@ elif score >= 60:
 else:
     print("Grade: F" )
 
+## Number Comparison
+num1 = int(input("Enter the first number: "))
+num2 = int(input("Enter the second number: "))
+if num1 > num2:
+    print("The first number is greater") 
+elif num2 > num1:
+    print("The second number is greater")
+else:
+    print("Both numbers are equal")
+
+##Eligibility for a discount
+howoldareyou = int(input("Enter your age: "))
+if howoldareyou < 12 or age > 65:
+    print("You're eligible for a discount")
+else:
+    print("No discount available")
+
+## Even Number Checker
+checker = int(input("Enter a number: "))
+
+if checker  % 2 == 0:
+    print("This is an even number")
+else:
+    print("This is an odd number")
+
+## Simple Calculator
+num1 = float(input("Enter the first number: "))
+num2 = float(input("Enter the second number: "))
+operator = input("Enter an operator (+, -, *, /): ")
+
+if operator == '+':
+    result = num1 + num2
+
+elif operator == '-':
+    result = num1 - num2
+elif operator == '*':
+    result = num1 * num2
+elif operator == '/':
+    result = num1 / num2 
+
+##Voting Eligibility
+age = int(input("Enter your age: "))
+country = input("Enter your country: ")
+
+if age >= 18 and country == "Ghana":
+    print("You can vote")
+else:
+    print("You cannot vote")
